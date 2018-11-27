@@ -1,0 +1,141 @@
+.set-initial{
+  all: initial;
+}
+
+.content-box {
+  position: absolute;
+  /*bottom: 10px;*/
+  /*right: 10px;*/
+  width:  280px;
+  z-index: 10000;
+  visibility: hidden;
+  box-shadow: 0px 0px 10px 1px #888888;
+  background: white;
+  margin: 10px;
+  padding: 10px;
+}
+
+.textField {
+  padding-bottom: 5px;
+}
+
+.focusCls{
+  background-color: blue;
+  opacity: 0.6;
+  border: 2px solid blue;
+}
+
+.direction-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.direction-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.spaceBetween {
+  justify-content: space-between;
+}
+
+.centerPosition {
+  justify-content: center;
+}
+
+.flex-margin3 {
+  margin: 5px;
+}
+
+.cancel-style {
+  background-color: transparent;
+  border: none;
+  font-size: 11px;
+  color: #c72b46f0;
+  outline: none;
+  cursor: pointer;
+}
+
+.submit-style {
+  background-color: #4787ed;
+  font-size: 11px;
+  border-radius: 3px;
+  padding: 5px 10px;
+  color: white;
+  outline: none;
+  cursor: pointer;
+}
+
+.flex-marginTop10 {
+  margin-top: 10px;
+}
+
+#eleBoxCont  span.text-node{
+  flex-basis: 20%;
+}
+
+#eleBoxCont input{
+  -webkit-appearance: textfield;
+  background-color: white;
+  -webkit-rtl-ordering: logical;
+  cursor: auto;
+  padding: 1px;
+  border-width: 2px;
+  border-style: inset;
+  border-color: initial;
+  border-image: initial;
+  text-rendering: auto;
+  color: initial;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  display: inline-block;
+  text-align: start;
+  width: 120px;
+  height: 30px;
+  flex-grow: 1;
+  font-size: 11px;
+  font-weight: normal;
+}
+
+#eleBoxCont select {
+  text-transform: none;
+  vertical-align: baseline;
+  background-color: rgb(248, 248, 248);
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(166, 166, 166);
+  border-image: initial;
+  -webkit-appearance: menulist;
+  border-radius: 5px;
+  width: 220px;
+}
+
+.text-node {
+  font-size: 12px;
+  color: grey;
+}
+
+.control-group{
+  height: 30px;
+  margin-bottom: 10px;
+}
+
+.action-div{
+  margin: -2px 0px 0px 5px;
+}
+
+.action-div div{
+  margin: 0px;
+  height: 21px;
+  cursor: pointer
+}
+
+#st-configure-list {
+  position: fixed;
+  top: 40%;
+  left: 40%;
+  z-index: 100001;
+}

@@ -1,0 +1,36 @@
+{
+  "manifest_version": 2,
+
+  "name": "Element Inspector",
+  "description": "This Extension creates a JSON file out of all the elements inspected.",
+  "version": "2.0",
+
+  "icons": {
+    "16": "images/storyicon16.png",
+    "48": "images/storyicon48.png",
+    "128": "images/storyicon128.png"
+  },
+  "browser_action": {
+    "default_icon": "images/storyicon16.png",
+    "default_popup": "popup.html",
+    "default_title": "Click here!!"
+  },
+  "permissions": [
+    "activeTab",
+    "contextMenus",
+    "tabs"
+  ],
+  "background": {
+    "scripts": ["eventPage.js"],
+    "persistent": true
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["dist/content.js","lib/jquery-3.2.1.min.js"],
+      "css": ["style.css"]
+    }
+  ]
+
+}
